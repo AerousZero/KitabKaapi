@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadata for website -->
+    <meta name="description" content="Contactus page of kitabkaapi" />
+    <meta name="keywords" content="contactus-page, coursework, srijan" />
+    <meta name="author" content="Srijan Shakya" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CONTACT</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <style>
+      @font-face {
+        font-family: "Rosemary";
+        src: url(font/Rosemary.ttf);
+      }
+      body {
+        background-image: url("../images/contact\ page.jpg");
+        font-family: Rosemary;
+        
+      }
+
+      h1 { 
+        margin: 0 0 20px;
+        font-weight: 400;
+        color: black;
+      }
+
+      p {
+        margin: 0 0 5px;
+      }
+
+      form {
+        padding: 25px;
+        margin-left: 10%;
+        box-shadow: 0 2px 5px #5c0bbd;
+        background: #e8ba5d;
+        
+      }
+
+      input,
+      textarea {
+        width: calc(100% - 18px);
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #1c87c9;
+        outline: none;
+      }
+
+      input::placeholder {
+        color: #666;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: linear-gradient(to right, #e8ba5d, black);
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+      }
+
+      button:hover {
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="../index.html" id="navbar-logo">KITABKAAPI</a>
+        <ul class="navbar-menu">
+          <li class="navbar-btn">
+            <!-- HOME page -->
+            <a href="../index.html" class="navbar-links" id="home-page">HOME</a>
+          </li>
+
+          <li class="navbar-btn">
+            <!-- PRODUCTS page -->
+            <a href="product.html" class="navbar-links" id="product-page"
+              >PRODUCT</a
+            >
+          </li>
+
+          <li class="navbar-btn">
+            <!-- BLOG page -->
+            <a href="blog.html" class="navbar-links" id="blog-page">BLOG</a>
+          </li>
+
+          <li class="navbar-btn">
+            <a href="research.html" class="navbar-links" id="research-page"
+              >RESEARCH</a
+            >
+          </li>
+
+          <li class="navbar-btn">
+            <a href="contactus.html" class="navbar-links" id="contactus-page"
+              >CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-block" style="width: 40%; height: 80%; text-align: center; position: fixed; left: 27%;">
+        <h1 style="text-align: center;">CONTACT US</h1>
+        <p style="text-align: center;">You can use our customer contact form below to contact us</p>
+      </header>
+      <form onsubmit="submit$onClickListener()">
+        <div class="info">
+          <input
+            id="fname"
+            type="text"
+            name="name"
+            placeholder="Full name"
+          />
+          <input id="email" type="text" name="name" placeholder="Email" />
+          <input id="phoneno" type="text" name="name" placeholder="Phone number" />
+          <input type="text" name="name" placeholder="Address" />
+        </div>
+        <p style="text-align:left">Comments</p>
+        <div>
+          <textarea rows="4"></textarea>
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <p>&copy;KitabKaapi, 2022</p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
